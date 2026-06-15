@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  mcp-server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      MCP_PORT: 3000
+      LARAVEL_API_URL: http://laravel:8000/api/v1
+      LARAVEL_API_KEY: dev-key
+      LOG_LEVEL: info
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - laravel
+      - redis
+    volumes:
+      - ./src:/app/src
+      - ./logs:/app/logs
+    networks:
+      - engineerstech
+
+  laravel:
+    image: engineerstech-laravel:latest
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "true"
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /app/database/local.sqlite
+    volumes:
+      - ../eTwebsitebackend/eTwebsitebackend:/app
+    networks:
+      - engineerstech
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - engineerstech
+
+networks:
+  engineerstech:
+    driver: bridge

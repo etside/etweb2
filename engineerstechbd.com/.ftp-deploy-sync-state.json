@@ -1,0 +1,107 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1774960707524,
+    "data": [
+        {
+            "type": "file",
+            "name": ".htaccess",
+            "size": 7108,
+            "hash": "096fa1eda6b1e939ea4de6b1ff41e45092ed2cbf290c26b0dca6d8cf21797efb"
+        },
+        {
+            "type": "folder",
+            "name": "assets"
+        },
+        {
+            "type": "file",
+            "name": "favicon.ico",
+            "size": 52761,
+            "hash": "5c93658b969c237e60ae82971ed05110133c85867c2182d8963dd4e79546970c"
+        },
+        {
+            "type": "file",
+            "name": "favicon.svg",
+            "size": 2495,
+            "hash": "4573f226aabe8b3008f7a5eab5a031602e8c6b5dd00513709df2d5d326577202"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 3550,
+            "hash": "096fdf9b6dbf2a7cbaa6be19e732a5ef142ad7453533debcee7670d955660dd5"
+        },
+        {
+            "type": "file",
+            "name": "placeholder.svg",
+            "size": 3253,
+            "hash": "64badf7aabda0b9630b87020ffb6095cb858ccbcf66b355c2aa08b1063954d3b"
+        },
+        {
+            "type": "file",
+            "name": "robots.txt",
+            "size": 160,
+            "hash": "a3d27b3ca5ce32341fa9f96f01169b521b1657c05d1860c45d1e53a6258e9e8b"
+        },
+        {
+            "type": "file",
+            "name": "assets/client-1-e2nI9MRT.png",
+            "size": 4589,
+            "hash": "3a827035286f4a747f890a0dfb61b97fd360e3af02df8ce9a876c429ad928e33"
+        },
+        {
+            "type": "file",
+            "name": "assets/client-2-DxDBf2qT.png",
+            "size": 4744,
+            "hash": "e0e401fa3b39e77297abd66290ef6d51653a46a19cd756074ebb3556d86364e6"
+        },
+        {
+            "type": "file",
+            "name": "assets/client-6-CQYisscp.png",
+            "size": 5406,
+            "hash": "c7396bf8ff4f95748a8407a598c4e8d20585e5975bda7fa27366046eab19d216"
+        },
+        {
+            "type": "file",
+            "name": "assets/freda-lin-DCbjB4J-.png",
+            "size": 55316,
+            "hash": "c0bcda7a59c9ed3cc84886eafdec2f68f6f5742e32d03de59367301a91a8f00e"
+        },
+        {
+            "type": "file",
+            "name": "assets/glowup-banner-for-web-mPQHVMTM.png",
+            "size": 570697,
+            "hash": "337c4e4dd76365b5bc0286f08213e6d0f04b521bf8d57f88631181e9621fac12"
+        },
+        {
+            "type": "file",
+            "name": "assets/index-_wM7uYn3.js",
+            "size": 1089752,
+            "hash": "8286480b36e9db0add8141f18203e310401f454cb2bd8dea554089c8cdb1470a"
+        },
+        {
+            "type": "file",
+            "name": "assets/index-fG5wE6Ds.css",
+            "size": 86725,
+            "hash": "40366a3d5c1a97dc22f98457c892ba66219416aeb03e77ded80708af7e93c127"
+        },
+        {
+            "type": "file",
+            "name": "assets/jeremy-nathan-C4Qu9i7M.jpg",
+            "size": 7127,
+            "hash": "6bc0d80d98fadd4829657dc455f530c3902b5662a1d63925c4ebf9fdd897fd75"
+        },
+        {
+            "type": "file",
+            "name": "assets/logo-dark-bg-DlC0wfi-.svg",
+            "size": 13283,
+            "hash": "d6a652bddc2ba02ecf441f49098a62668f0058c1b58e00d5c895bf7dd1e116a4"
+        },
+        {
+            "type": "file",
+            "name": "assets/mynul-hasan-DlGcQBIM.jpg",
+            "size": 8229,
+            "hash": "ee5379b798552d5337b7b40525f0379a3760a53658baf6fd3245517d10f7338a"
+        }
+    ]
+}

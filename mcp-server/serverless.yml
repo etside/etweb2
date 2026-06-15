@@ -1,0 +1,41 @@
+name: engineersTech MCP Server
+org: engineerstech
+service: mcp-server
+
+frameworkVersion: '3'
+
+provider:
+  name: tencentcloud
+  runtime: nodejs18
+  region: ap-beijing
+  memorySize: 512
+  timeout: 30
+  environment:
+    LARAVEL_API_URL: ${env:LARAVEL_API_URL}
+    LARAVEL_API_KEY: ${env:LARAVEL_API_KEY}
+    NODE_ENV: production
+    LOG_LEVEL: info
+
+package:
+  individually: false
+  patterns:
+    - dist/**
+    - node_modules/**
+    - '!.git/**'
+    - '!.gitignore'
+    - '!node_modules/.bin/**'
+
+functions:
+  mcp-server:
+    handler: dist/index.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{proxy+}
+          method: ANY
+
+plugins:
+  - serverless-plugin-tracing
+  - serverless-tencent-scf
